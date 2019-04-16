@@ -56,3 +56,18 @@ para listar os groups
 nano teste - abre o arquivo teste
 ctrl O para salvar
 ctrl X para sair 
+
+permissoes dos usuarios
+usuario grupo outros 
+rw-rw----
+110110000
+em hexa - 660
+chmod 660 teste - estabelece estas permissoes
+
+logar como fulano su fulano 
+cat teste = tenta ler 
+abrir o arquivo - nano nome do arquivo 
+
+su - loga como root
+adduser fulano root
+
