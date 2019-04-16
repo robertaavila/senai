@@ -1,0 +1,35 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{real rEntrada = 0 // variável para o primeiro número inserido
+	real rEntrada2 = 0 // variável para o segundo número inserido
+	real rRaiz = 0 // variável para cálculo da raiz do número menor 
+	real rQuadrado = 0 // variável para o quadrado do número maior
+	
+		//programa pede o primeiro número 
+		escreva("Insira o primeiro número: ")
+		leia(rEntrada)
+
+		//programa pede o segundo número 
+		escreva("Insira o segundo número: ")
+		leia(rEntrada2)
+
+		//se os números não são iguais ele calcula o quadrado do menor e a raiz do maior. 
+		se (rEntrada > rEntrada2){
+				rQuadrado = rEntrada2 * rEntrada2
+				rRaiz = mat.raiz(rEntrada, 2.0) 
+			}
+				senao {
+					rQuadrado = rEntrada * rEntrada	
+					rRaiz = mat.raiz(rEntrada2, 2.0)	
+				}
+		se (rEntrada == rEntrada2){
+			escreva("\nNúmero iguais. \n")
+		}
+			senao {
+				escreva("\nO quadrado do número menor é " + rQuadrado + ". A raiz do número maior é: " + rRaiz + ".\n")
+			}
+	}
+}
