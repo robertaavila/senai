@@ -1,0 +1,54 @@
+programa
+
+{
+
+	funcao inicio()
+
+	{
+
+		cadeia tEntrada //Variável de entrada
+		cadeia tEntrada2 //Variável de entrada
+		cadeia tEntrada3 //Variável de entrada
+		cadeia tEntrada4 //Variável de entrada
+		cadeia tResposta //Resposta de saída 1
+		cadeia tResposta2 //Resposta de saída 2
+		cadeia tResposta3 //Resposta do saída 3
+		cadeia tResposta4 //Resposta do saída 4
+		cadeia tSaida //Saída do sistema
+		
+
+		//Mensagem inicial
+		tEntrada = "Olá, usuário. Digite quatro palavras. A primeiro deve ser um verbo na terceira pessoa do plural: \n"
+		escreva(tEntrada)
+		//Leitura de dados
+		leia(tResposta)
+
+		//Mensagem de entrada
+		tEntrada2 = "\nDigite um substantivo: \n"
+		escreva(tEntrada2)
+		//Leitura de dados
+		leia (tResposta2)
+		
+		//Mensagem de entrada
+		tEntrada3 = "\nAgora digite um adjetivo: \n"
+		escreva(tEntrada3)
+		//Leitura de dados
+		leia (tResposta3)
+
+		//Mensagem de entrada
+		tEntrada4 = "\nDigite mais um substantivo: \n"
+		escreva(tEntrada4)
+		//Leitura de dados
+		leia (tResposta4)
+		
+		//Saída de dados
+		tSaida = "\nAs casas espiam os homens que " + (tResposta) + " atrás de " + 
+		(tResposta2) + ". A tarde talvez fosse " + (tResposta3) + ", não houvesse tantos " + (tResposta4) + ".\n\n" +
+		"Fonte: ANDRADE, Carlos Drummond de. Poema de sete faces.\n"  
+		escreva(tSaida)
+
+		
+
+	}
+
+}
