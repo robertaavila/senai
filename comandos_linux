@@ -1,0 +1,36 @@
+cd /home - vai para o diretório home
+
+/home# ls - lista o diretorio 
+
+cd usuario - vai para o diretorio do usuario 
+
+mkdir seunome - cria o diretorio "seu nome"
+
+touch arquivo1 - cria um "arquivo1"
+
+edite este arquivo com o conteúdo "exercício sobre linux"
+
+copia - arquivo de origem - destino 
+cp arquivo1 seunome/arquivo2
+
+cat - lista conteúdo do arquivo 
+
+cat arquivo2
+
+mv - move, nomeia e destroi o anterior
+
+voltar um diretorio = cd..
+
+mv arquivo1 novo_arquivo
+
+criar usuario e senha: 
+adduser ou useradd
+adduser já pede para criar a senha 
+
+add user fulano = cria o usuario fulano 
+já cria o grupo
+
+digite a nova senha UNIX: 12345
+
+passwd - para alterar a senha 
+
