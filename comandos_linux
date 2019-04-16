@@ -9,6 +9,8 @@ mkdir seunome - cria o diretorio "seu nome"
 touch arquivo1 - cria um "arquivo1"
 
 edite este arquivo com o conteúdo "exercício sobre linux"
+abre com o editor - nano arquivo 1
+inserir o texto - ctrl O para salvar 
 
 copia - arquivo de origem - destino 
 cp arquivo1 seunome/arquivo2
