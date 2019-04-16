@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	real rValorCompra = 0.0
+	real rValorVenda = 0.0
+	real rValorVenda2 = 0.0
+		//o programa pede a inserção do valor de compra
+		escreva("Olá, insira o valor de compra do produto: ")
+		leia(rValorCompra) 
+		//se o valor de compra foi menor que 20 o lucro deverá ser de 45%, logo o valor deve ser multiplicado por 1,45
+		se(rValorCompra < 20){
+			rValorVenda = rValorCompra * 1.45
+			escreva("O valor de venda do produto será: " + rValorVenda)}
+		//se o valor de compra foi maior que 20 o lucro deverá ser 30%, logo o valor de compra deverá ser multiplicado por 1,3	
+		senao{
+			rValorVenda2 = rValorCompra * 1.3
+			escreva("O valor de venda do produto será: " + rValorVenda2 + ".")
+			}
+			
+		}
+	}
