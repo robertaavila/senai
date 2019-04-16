@@ -1,0 +1,46 @@
+programa
+
+{
+	funcao inicio()
+
+	{
+		cadeia cEntrada, cEntrada2 //Variáveis de entrada
+		real rResposta, rResposta2, rResposta3, rResposta4 //Respostas de saída 
+		real rMedia//calculo da media ponderada
+		cadeia cSaida //Saída do sistema
+     
+     	//Mensagem inicial
+		cEntrada = "Olá, usuário. Digite o primeiro número: \n"
+		escreva(cEntrada)
+
+		//Leitura de dados
+		leia (rResposta)
+
+		//Mensagem para entrada de dados		
+		cEntrada2 = "\nDigite mais um número: \n"
+		escreva(cEntrada2)
+
+		//Leitura de dados
+		leia (rResposta2)
+
+		//Mensagem para entrada de dados	
+		escreva(cEntrada2)
+
+		//Leitura de dados
+		leia (rResposta3)
+
+		//Mensagem para entrada de dados	
+		escreva(cEntrada2)
+		
+		//Leitura de dados
+		leia (rResposta4)
+
+		//Saída de dados
+		
+		(rMedia) =  (rResposta + rResposta2 * 2 + rResposta3  * 3 + rResposta4 * 4)/10 
+		(cSaida) = "\nA média ponderada dos valores inseridos é " + (rMedia) + ".\n"
+		escreva (cSaida)
+
+	}
+
+}
