@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{caracter cSexo 
+	real rAltura = 0.0
+	real rPesoIdeal = 0.0
+
+		//programa pede a inserção do sexo do usuário
+		escreva("Insira seu sexo: M ou F? ")
+		leia(cSexo)
+
+		//programa pede a inserção da altura
+		escreva("\nInsira sua altura com duas casas decimais: ")
+		leia(rAltura)
+
+		escolha(cSexo){
+			caso 'M':
+			  rPesoIdeal = (72.7 * rAltura) - 58.0
+			  pare 
+			  
+			caso 'F': 
+			  rPesoIdeal = (62.1 * rAltura) - 44.7
+			  pare
+		}
+		//programa escreve o peso do usuário
+		escreva("\nSeu peso ideal é: " + rPesoIdeal + "\n")
+	}
+}
