@@ -39,7 +39,20 @@ addgroup usuarios
 
 adduser-usuario-grupo
 adduser fulano usuarios
+adduser siclano usuarios
 
 ver os usuarios do grupo
 cat/etc/group
 
+o usuario pode estar em mais de um grupo
+
+arquivo que contém os usuários do sistema - etc/passwd
+para copiar o arquivo que contém os usuários do sistema 
+/etc/passwd 
+
+para listar os groups
+/etc/groups
+
+nano teste - abre o arquivo teste
+ctrl O para salvar
+ctrl X para sair 
