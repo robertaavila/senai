@@ -34,3 +34,12 @@ digite a nova senha UNIX: 12345
 
 passwd - para alterar a senha 
 
+addgroup - adiciona grupo
+addgroup usuarios
+
+adduser-usuario-grupo
+adduser fulano usuarios
+
+ver os usuarios do grupo
+cat/etc/group
+
