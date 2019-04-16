@@ -1,0 +1,48 @@
+programa
+{
+	inclua biblioteca Tipos --> tp
+	inclua biblioteca Texto --> tx
+	
+	funcao inicio()
+	{
+	cadeia cSala = " "
+	caracter cInicial = ' '
+	inteiro iSala = 0
+		//o programa pede o nome do usuário 	
+		escreva("Insira seu nome: ")
+		leia(cSala)
+		//o programa extrai a primeira letra do nome
+		cSala = tx.extrair_subtexto(cSala, 0, 1)
+		//o programa transforma o caracter extraído em letra maiúscula
+		cSala = tx.caixa_alta(cSala)
+		//conversão da cadeia para caracter
+		cInicial = tp.cadeia_para_caracter(cSala)
+
+		//para os casos de A a K a sala é 101	
+		escolha(cInicial){	
+			caso 'A': 
+			caso 'B':
+			caso 'C':
+			caso 'D':
+			caso 'E':
+			caso 'F':
+			caso 'G':
+			caso 'H':
+			caso 'I':
+			caso 'J':
+			caso 'K':
+				escreva("\nSala 101.\n")
+				pare
+			//para os casos de L a N a sala é 102		
+			caso 'L':
+			caso 'M':
+			caso 'N':
+				escreva("\nSala 102.\n")
+				pare
+			//para os casos de O a Z a sala é 103	
+			caso contrario:
+				escreva("\nSala 103.\n")
+				
+		}	
+	}
+}
