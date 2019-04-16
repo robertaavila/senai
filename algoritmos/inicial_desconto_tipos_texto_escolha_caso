@@ -1,0 +1,48 @@
+programa
+
+{
+
+	inclua biblioteca Tipos --> tp
+	inclua biblioteca Texto--> tx
+
+	funcao inicio()
+	{
+	cadeia cNome = " "
+	caracter cInicial = ' '
+	real rConta = 0.0
+
+		//o programa pede o nome do usuário 	
+		escreva("Insira seu nome: ")
+		leia(cNome)
+
+		//o programa extrai a primeira letra do nome
+		cNome = tx.extrair_subtexto(cNome, 0, 1)
+
+		//o programa transforma o caracter extraído em letra maiúscula
+		cNome = tx.caixa_alta(cNome)
+
+		//conversão da cadeia para caracter
+		cInicial = tp.cadeia_para_caracter(cNome)
+
+		//para os casos de nome com letras A, D, M e S o desconto é aplicado	
+		escolha(cInicial){
+			caso 'A': 
+			caso 'D':
+			caso 'M':
+			caso 'S':
+
+				//o programa pede o valor da conta
+				escreva("\nQual o valor da sua conta? ")
+				leia(rConta)
+				rConta = 0.7 * rConta						
+				escreva("\nVocê recebeu 30% de desconto. O valor da sua conta é: R$" + rConta + ".\n")
+				pare
+
+			//para nomes com as demais letras não há desconto
+			caso contrario:
+				escreva("\nDessa vez você não recebeu desconto. Tente novamente no futuro.\n")
+		
+		}	
+	}
+}
+
