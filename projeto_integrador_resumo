@@ -1,0 +1,32 @@
+Projeto Integrador - Aplicativo
+
+Contexto: mobilidade - ciclismo 
+
+Problema: baixa mobilidade na cidade e falta de estruturas e apoio ao ciclista
+
+Como iremos resolver/minimizar o problema: 
+
+Nossa ideia é produzir um aplicativo para Android voltado para ciclistas que usam a bicicleta como meio de transporte. Aplicativos atuais, como Endomondo e Strava, têm foco no ciclismo como esporte e oferecem funcionalidades como:
+
+●	batimentos cardíacos;
+●	trajeto percorrido;
+●	inclinação no terreno;
+●	velocidade média e máxima. 
+
+Nosso aplicativo tem como objetivo oferecer funções que contribuam para a segurança do ciclista como;
+
+●	trajetos indicados e não indicados;
+●	botão de emergência associado ao GPS;
+●	serviços relacionados (bicicletaria, posto de gasolina);
+●	integração com a plataforma Yellow para ver onde há bicicletas para aluguel;
+●	compartilhamento do aplicativo (indique para amigos).
+
+Funcionamento: o ciclista preencherá um cadastro para utilizar o app com seus dados pessoais e com uma lista de contatos de emergência. Ele poderá indicar o trajeto que irá percorrer naquele momento e se ficar mais de 5 minutos parado no mesmo lugar o app exibe uma mensagem: “deseja enviar um SOS?”. O ciclista pode marcar que não. Se ele não fizer isso uma mensagem SMS com sua localização é enviada para os contatos da lista de emergência. 
+
+O ciclista também pode cadastrar suas rotas preferidas e locais onde ele considera que é arriscado andar de bicicleta.  
+
+Se a plataforma da Yellow oferecer essa funcionalidade podemos fazer uma integração para mostrar onde há bicicletas disponíveis para aluguel na cidade. 
+
+A função de compartilhamento permite o envio de um convite para o download do aplicativo. 
+
+Público-alvo: ciclistas preocupados com a segurança no seu deslocamento. 
