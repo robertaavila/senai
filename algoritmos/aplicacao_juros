@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio()
+	
+	{
+		cadeia cEntrada, cEntrada2 //Variáveis de entrada
+		real rValor //Variáveis de resposta
+		inteiro iPrazo //Variáveis de resposta
+		real rJuros//Calculo dos juros
+		cadeia cSaida //Saída do sistema
+     
+     	//Mensagem inicial
+		cEntrada = "Olá, usuário. Digite o valor a ser aplicado: \n"
+		escreva(cEntrada)
+
+		//Leitura de dados
+		leia (rValor)
+
+		//Mensagem inicial
+		cEntrada2 = "\nAgora digite o número de meses da aplicação: \n"
+		escreva(cEntrada2)
+
+		//Leitura de dados
+		leia (iPrazo)
+
+		//Saída de dados
+		rJuros = rValor + (rValor * (0.01 * iPrazo)) 
+		cSaida = "\nAo final do prazo o saldo da aplicação será " + (rJuros) + ".\n"
+		escreva (cSaida)
+
+	}
+}
