@@ -1,0 +1,33 @@
+programa
+{
+	
+	funcao inicio()
+		{inteiro iSuperior = 0 
+		inteiro iInferior = 0 
+		inteiro i = 0
+		inteiro iCelsius = 0
+		inteiro iDecremento = 0
+
+		//o programa pede a inserção do primeiro número 		
+		escreva("Insira o limite superior: ")
+		leia(iSuperior)
+
+		//o programa pede a inserção do segundo número 	
+		escreva("Insira o limite inferior: ")
+		leia(iInferior)
+
+		//pede a inserção do índice de decremento
+		escreva("Insira o intervalo de decremento: ")
+		leia(iDecremento)
+
+		escreva("Tabela de conversão\n")
+				
+		//o programa calcula o valor em graus celsius e incrementa a conta conforme o valor inserido
+		para(i=iSuperior; i>=iInferior; i-=iDecremento){
+			escreva(i + " Farenheit = ") 
+			iCelsius = (5 * (i - 32))/9
+			escreva(iCelsius + " Celsius\n")
+			
+		}
+	}	
+}
