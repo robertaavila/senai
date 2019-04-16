@@ -1,0 +1,42 @@
+programa
+{
+	
+	funcao inicio()
+		{inteiro iEntrada = 0 
+		inteiro iEntrada2 = 0 
+		inteiro iInicio = 0
+		inteiro iFinal = 0
+		inteiro i = 0
+
+		//o programa pede a inserção do primeiro número 		
+		escreva("Insira o primeiro número: ")
+		leia(iEntrada)
+
+		//o programa pede a inserção do segundo número 	
+		escreva("Insira o segundo número: ")
+		leia(iEntrada2)
+		
+		//se o primeiro valor for menor que o segundo ele é o início
+		se(iEntrada < iEntrada2){
+			iInicio = iEntrada
+			iFinal = iEntrada2  
+		} 
+		//se o segundo valor for menor ele é o início
+		senao {
+			iFinal = iEntrada
+			iInicio = iEntrada2  
+		}
+		//o programa soma o início 1 a 1 e imprime os múltiplos de 5
+		para(i=iInicio; i<=iFinal; i++){
+			se(i%5==0){
+				escreva(i + "\n")
+				}
+	
+		}	
+	}
+}
+
+	
+			  
+
+
