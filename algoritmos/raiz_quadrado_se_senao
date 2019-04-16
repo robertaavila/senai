@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{real rEntrada = 0 
+	real rEntrada2 = 0
+	real rRaiz  
+	real rQuadrado = 0
+	
+	
+		escreva("Insira o primeiro número: ")
+		leia(rEntrada)
+
+		escreva("Insira o segundo número: ")
+		leia(rEntrada2)
+		
+		se(rEntrada > rEntrada2){
+			rEntrada2 = rQuadrado
+			rQuadrado = rQuadrado * rQuadrado
+			escreva(rQuadrado)
+		}
+			senao {
+				rEntrada = rQuadrado
+				escreva(rQuadrado)
+			}
+		
+
+	}
+}
