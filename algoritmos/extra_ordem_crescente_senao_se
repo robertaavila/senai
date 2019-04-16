@@ -1,0 +1,61 @@
+programa
+{
+	
+	funcao inicio() {
+		real rEntrada, rEntrada2, rEntrada3
+		real rMenor = 0.0, rMedio = 0.0, rMaior = 0.0
+
+		//o programa pede o primero número
+		escreva("Insira o primeiro número: ")
+		leia(rEntrada)
+		//o programa pede o segundo número 
+		escreva("Insira o segundo número: ")
+		leia(rEntrada2)
+		//o programa pede o terceiro número	
+		escreva("Insira o terceiro número: ")
+		leia(rEntrada3)
+		//se o primeiro número é menor que os outros dois ele é armazenada na variável rMenor
+		se(rEntrada < rEntrada2 e rEntrada < rEntrada3){
+			rMenor = rEntrada  
+			//o menor entre os outros dois é armazenado em rMedio. o demais em rMaior. O mesmo vale para os demais senao se
+			se(rEntrada2 < rEntrada3){
+				rMedio = rEntrada2  
+				rMaior = rEntrada3  
+			}
+			senao{
+				rMaior = rEntrada2  
+				rMedio = rEntrada3  
+			}
+			
+		}
+			senao se (rEntrada2 < rEntrada e rEntrada2 < rEntrada3){
+				rMenor = rEntrada2  
+				se(rEntrada < rEntrada3){
+					rMedio = rEntrada 
+					rMaior = rEntrada3  
+			}
+				senao{
+					rMaior = rEntrada 
+					rMedio = rEntrada3  
+			}	
+					
+		}
+
+				senao se (rEntrada3 < rEntrada e rEntrada3 < rEntrada2){
+					rMenor = rEntrada3  
+					se(rEntrada < rEntrada2){
+						rMedio = rEntrada 
+						rMaior = rEntrada2  
+				}
+					senao{
+						rMaior = rEntrada 
+						rMedio = rEntrada2  
+					}
+				}	
+
+		escreva("\nO menor valor é: " + rMenor + ", o valor intermediário é: " + rMedio + " e o maior valor é: " + rMaior + ". \n")
+
+	}
+
+}
+
