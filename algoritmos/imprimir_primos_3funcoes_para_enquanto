@@ -1,0 +1,37 @@
+programa
+{
+
+	funcao inicio()
+	{	inteiro iEntrada = 0
+		logico lPrimo
+		inteiro i = 1
+
+		//o programa pede a inserção de um número	
+		escreva("Insira um número limite: \n")
+		leia(iEntrada)
+		escreva("\nOs números primos entre 0 e o limite são: \n")
+		//entre 1 e o limite todo número primo será impresso 
+		para(i=1; i<= iEntrada; i++){
+			lPrimo = isPrimo(i)
+		 	se (lPrimo == verdadeiro){
+		 		escreva(i+ "\n")
+		 	}
+		}
+	}
+
+	//fucao para verificar se o número é primo 
+	funcao logico isPrimo(inteiro pEntrada){		
+		inteiro iDivisor = 0
+		inteiro iContador = 1
+		//enquanto o contador for menor que o número inserido o programa divide o número pelo divisor, verifica o resto 
+		//e aumenta o divisor
+		enquanto(iContador <= pEntrada){
+			se (pEntrada % iContador == 0){
+				iDivisor++
+			}
+			iContador++
+		}
+		retorne iDivisor == 2
+	}
+}
+
