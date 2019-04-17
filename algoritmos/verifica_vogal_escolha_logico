@@ -1,0 +1,53 @@
+programa
+{
+	inclua biblioteca Tipos --> tp
+	inclua biblioteca Texto--> tx
+
+	funcao inicio()
+	{
+		cadeia cPalavra = " "
+		logico lVogal = verdadeiro
+	
+
+		//o programa pede a inserção de uma palavra
+		escreva("Insira uma palavra: ")
+		leia(cPalavra)
+		
+		lVogal = isVogal(cPalavra)
+		se (lVogal){
+			escreva("\nEssa palavra começa com uma vogal.\n")
+		} 
+		senao{
+			escreva("\nEssa palavra não começa com uma vogal.\n")
+		}				
+	
+	}
+
+	funcao logico isVogal(cadeia pPalavra){
+		caracter cInicial = ' '
+		logico lRetorno = falso
+		//o programa extrai a primeira letra da palavra
+		pPalavra = tx.extrair_subtexto(pPalavra, 0, 1)
+		//o programa transforma o caracter extraído em letra maiúscula
+		pPalavra = tx.caixa_alta(pPalavra)
+		//conversão da cadeia para caracter
+		cInicial = tp.cadeia_para_caracter(pPalavra)
+		//informa os casos de palavras que começam com vogal
+		escolha(cInicial){
+			caso 'A': 
+			caso 'E':
+			caso 'I':
+			caso 'O':
+			caso 'U':
+				lRetorno = verdadeiro		
+				pare
+
+			caso contrario: 
+				lRetorno = falso
+				pare
+
+		}	
+		retorne lRetorno
+	}
+}
+
