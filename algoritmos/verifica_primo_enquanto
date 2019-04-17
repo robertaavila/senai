@@ -1,0 +1,34 @@
+programa
+{
+	funcao inicio()
+	{	inteiro iEntrada = 0
+		logico lPrimo
+
+		//o programa pede a inserção de um número	
+		escreva("Insira um número: \n")
+		leia(iEntrada)
+		//se o resultado de isPrimo for verdadeiro o número é primo  
+		lPrimo = isPrimo(iEntrada)
+		se (lPrimo){
+			escreva ("O número é primo.")} 
+		senao{
+			escreva("O número não é primo.")
+		}
+	}
+
+	//fucao para verificar se o número é primo 
+	funcao logico isPrimo(inteiro pEntrada){		
+		inteiro iDivisor = 1
+		inteiro iContador = 0
+		//enquanto o contador for menor que o número inserido o programa divide o número pelo divisor, verifica o resto 
+		//e aumenta o divisor
+		enquanto(iContador <= pEntrada){
+			se (pEntrada % iDivisor ==0){
+				iDivisor++
+			}
+			iContador++
+		}
+		//se o número de divisões com resto 0 for 2 o número é primo
+		retorne iDivisor == 2
+	}
+}
