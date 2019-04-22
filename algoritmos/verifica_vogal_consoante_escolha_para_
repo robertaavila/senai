@@ -1,0 +1,98 @@
+programa
+
+{
+	inclua biblioteca Tipos --> tp
+	inclua biblioteca Texto--> tx
+
+	funcao inicio()
+	{
+		cadeia cPalavra = " "
+		inteiro iVogalNumero = 0 
+		inteiro iConsoanteNumero = 0 
+		//o programa pede a inserção de uma palavra
+		escreva("Insira uma palavra: ")
+		leia(cPalavra)
+		iVogalNumero = iVogal(cPalavra)
+		iConsoanteNumero = iConsoante(cPalavra)
+		escreva("\nO número de vogais é: " + iVogalNumero + ".\n\n")
+		escreva("O número de consoantes é: " + iConsoanteNumero + ".\n\n")	
+	}
+
+	funcao inteiro iVogal(cadeia pPalavra){
+		cadeia cAvaliar 
+		caracter cConversao
+		inteiro iContadorv = 0
+		inteiro iNumero = 0 
+		inteiro i = 0 
+		iNumero = tx.numero_caracteres(pPalavra)
+		//o programa extrai a primeira letra da palavra
+		para(i = 0; i<iNumero; i++){
+			cAvaliar = tx.extrair_subtexto(pPalavra, i, i+1)
+			//o programa transforma o caracter extraído em letra maiúscula
+			cAvaliar = tx.caixa_alta(cAvaliar)
+			//conversão da cadeia para caracter
+			cConversao = tp.cadeia_para_caracter(cAvaliar)
+			//informa os casos de palavras que começam com vogal
+			escolha(cConversao){
+				caso 'A': 
+				caso 'E':
+				caso 'I':
+				caso 'O':
+				caso 'U':
+					iContadorv++		
+					pare
+				caso contrario: 
+					pare
+			}	
+		
+		}
+			retorne iContadorv
+	}
+	
+	
+	funcao inteiro iConsoante(cadeia pPalavra){
+		cadeia cAvaliar 
+		caracter cConversao
+		inteiro iContadorc = 0
+		inteiro iNumero = 0 
+		inteiro i = 0 
+		iNumero = tx.numero_caracteres(pPalavra)				
+		//o programa extrai a primeira letra da palavra
+		para(i = 0; i<iNumero; i++){
+			cAvaliar = tx.extrair_subtexto(pPalavra, i, i+1)
+			//o programa transforma o caracter extraído em letra maiúscula
+			cAvaliar = tx.caixa_alta(cAvaliar)
+			//conversão da cadeia para caracter
+			cConversao = tp.cadeia_para_caracter(cAvaliar)
+			//informa os casos de palavras que começam com vogal
+			escolha(cConversao){
+				caso 'B': 
+				caso 'C':
+				caso 'D':
+				caso 'F':
+				caso 'G':
+				caso 'H': 
+				caso 'J':
+				caso 'K':
+				caso 'L':
+				caso 'M': 
+				caso 'N':
+				caso 'P':
+				caso 'Q':
+				caso 'R':
+				caso 'S':
+				caso 'T':
+				caso 'V': 
+				caso 'X':
+				caso 'Z':					
+					iContadorc++ 		
+					pare
+				caso contrario: 
+					pare
+			}	
+		}
+		
+		retorne iContadorc 
+	}
+}
+
