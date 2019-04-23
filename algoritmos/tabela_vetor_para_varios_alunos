@@ -1,0 +1,25 @@
+programa
+{
+	real vNotaA[5]
+	real vNotaB[5]
+	cadeia vAluno[5]
+	real rMedia = 0.0
+	inteiro i=0
+	cadeia cSaida =""
+	funcao inicio()
+	{
+		para (i=0;i<5;i++){		
+			escreva("Insira o nome do aluno " + (i+1) + ": ")
+			leia(vAluno[i]) 
+			escreva("Insira a nota 1: ")
+			leia(vNotaA[i]) 
+			escreva("Insira a nota 2: ")
+			leia(vNotaB[i]) 
+			rMedia = (vNotaA[i] + vNotaB[i])/2
+			cSaida += "Aluno: " + vAluno[i] + "\t" + "Nota 1: " + vNotaA[i] + "\t" + 
+			"Nota 2: "+ vNotaB[i] + "\t" + "Media: " + rMedia + "\n"
+		}	
+	escreva(cSaida)
+	}
+}
+		
