@@ -1,0 +1,29 @@
+programa
+{
+	
+inteiro iEntrada = 0
+	inteiro i = 0 
+	inteiro iMaior = 0 
+	inteiro iMenor = 0 
+	inteiro iEntrada2 = 0
+	funcao inicio()
+	{	escreva("Insira o número de termos que você deseja comparar: ")
+		leia(iEntrada)			
+		
+		para (i=0;iEntrada>i;i++){		
+			escreva("Digite o número: ")
+			leia(iEntrada2)
+			se(i==0){
+				iMaior = iEntrada2
+				iMenor = iEntrada2
+			}
+			se(iEntrada2 >= iMaior){
+				iMaior = iEntrada2					
+			}
+			se(iEntrada2 <= iMenor){
+				iMenor = iEntrada2					
+			}
+		}
+	escreva("O maior número é: " + iMaior + ". O menor número é:" + iMenor) 
+	}		
+}
