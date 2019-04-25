@@ -1,0 +1,45 @@
+programa
+
+{
+	real vCompra[10]
+	real vVenda[10]
+	inteiro iLucro1 = 0
+	inteiro iLucro2 = 0
+	inteiro iLucro3 = 0
+	inteiro i=0
+	
+	funcao inicio()
+
+	{	//o loop repetirá por 10 vezes
+		para (i=0;i<10;i++){		
+			//primeiro ele pede o valor da compra do produto e preenche o vetor
+			escreva("Insira o valor de compra do produto " + (i+1) + ": ")
+			leia(vCompra[i]) 
+			//depois pede o valor de venda e preenche o vetor
+			escreva("Insira o valor de venda do produto " + (i+1) + ": ")
+			leia(vVenda[i]) 
+			//se o valor de venda tem lucro menor que 10 % o contador é iLucro1
+			se((vVenda[i]/vCompra[i])<1.1*vCompra[i])	
+			{
+				iLucro1++			
+			}	
+			//se o valor de venda tem lucro menor entre 10 e 20% o contador é iLucro2
+			senao se((vVenda[i]/vCompra[i])>1.1*vCompra[i])	
+			{
+				se((vVenda[i]/vCompra[i])>1.1*vCompra[i] e (vVenda[i]/vCompra[i])<1.2*vCompra[i]){	 
+				iLucro2++
+				}
+				//senao é o iLucro3	
+				senao{			
+				iLucro3++	 
+				}
+			}
+		limpa()
+		}
+	escreva("O número de mercadorias com lucro menor que 10% é: " + iLucro1 + ".\n")
+	escreva("O número de mercadorias com lucro entre 10 e 20% é: " + iLucro2 + ".\n")
+	escreva("O número de mercadorias com lucro maior que 20% é: " + iLucro3 + ".\n")
+	
+	}
+}
+		
