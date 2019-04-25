@@ -1,0 +1,62 @@
+programa
+
+{
+	inteiro i20 = 1, i21 = 2, i22 = 4, i23 = 8, i24 = 16, i25 = 32, i26 = 64, i27 = 128
+	inteiro iByte = 0, iByte0 = 0, iByte1 = 0,iByte2 = 0,iByte3 = 0,iByte4 = 0, iByte5 = 0,iByte6 = 0, iByte7 = 0, iByte8 = 0
+	inteiro iTotal
+	funcao inicio()
+
+	{
+	escreva("Insira um byte em número binário: ")	
+	
+	leia(iByte0)
+	leia(iByte1)
+	leia(iByte2)
+	leia(iByte3)
+	leia(iByte4)
+	leia(iByte5)
+	leia(iByte6)
+	leia(iByte7)
+
+	se(iByte0 == 1){
+		iByte0 = i20  	
+	}
+
+	
+	se(iByte1 == 1){
+		iByte1 = i21  	
+	}
+
+	
+	se(iByte2 == 1){
+		iByte2 = i22  	
+	}
+		
+
+	se(iByte3 == 1){
+		iByte3 = i23  	
+	}
+	
+	se(iByte4 == 1){
+		iByte4 = i24  	
+	}
+	
+	se(iByte5 == 1){
+		iByte5 = i25  	
+	}
+	
+	se(iByte6 == 1){
+		iByte6 = i26  	
+	}
+	se(iByte7 == 1){
+		iByte7 = i27  	
+	}
+
+	iTotal = i20 + i21 + i22 + i23 + i24 + i25 + i26 + i27
+	escreva("O valor binário deste byte é: " + iTotal)
+
+	}
+
+}
+
+		
