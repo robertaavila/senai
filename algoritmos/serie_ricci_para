@@ -1,0 +1,26 @@
+programa
+
+{
+	inteiro vNumero[10]
+	inteiro i=0
+	inteiro iLimite
+	funcao inicio()
+	{	//o programa pede o primeiro valor para a série 
+		escreva("Insira o primeiro número: ")
+		leia(vNumero[0]) 
+		//e o segundo valor
+		escreva("Insira o segundo número: ")
+		leia(vNumero[1]) 
+		//a seguir o programa pede o número de termos a serem gerados
+		escreva("Insira o número de termos a serem impressos. O valor mínimo é 3: ")	
+		leia(iLimite)
+		//o programa escreve os dois primeiros termos da série
+		escreva("A série de Ricci indicada é: " + vNumero[0] + ", " + vNumero[1] + ", ")
+		//o loop calcula e escreve os demais termos
+		para (i=2;i<iLimite;i++){		
+				vNumero[i] = vNumero[i-1] + vNumero[i-2]
+				escreva(vNumero[i] + ", ")
+		}			
+	}
+}
+
