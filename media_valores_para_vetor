@@ -1,0 +1,76 @@
+
+programa
+
+
+
+{ inclua biblioteca Matematica --> mat
+
+	real vValores[10]
+
+	real rMedia = 0.0
+
+	inteiro i=0
+
+	inteiro iIgual = 0
+
+	inteiro iMedia = 0 
+
+	inteiro iMaior = 0 
+
+	
+
+	funcao inicio()
+
+
+
+	{
+
+		para (i=0;i<10;i++){
+
+			escreva("Insira um novo valor: " )
+
+			leia(vValores[i]) 
+
+			rMedia += vValores[i]
+
+		}
+
+			rMedia = rMedia/10
+
+			rMedia = mat.arredondar(rMedia, 0)
+
+		
+
+		para (i=0;i<10;i++){	
+
+			se(vValores[i]==10){
+
+				iIgual++
+
+			}
+
+			se(vValores[i]>rMedia){
+
+				iMaior++
+
+			}
+
+			se(vValores[i]==rMedia){
+
+				iMedia++
+
+			}			
+
+		}		
+
+	escreva("A média dos valores é: " + rMedia + "\n")	
+
+	escreva("O número de valores iguais a 10 é: " + iIgual + "\n")
+
+	escreva("O número de valores maiores que a média é: " + iMaior + "\n")
+
+	escreva("O número de valores iguais à média é: " + iMedia + "\n")
+
+	}
+
+}
