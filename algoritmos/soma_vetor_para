@@ -1,0 +1,24 @@
+programa
+{
+	inteiro vNumero[10]
+	inteiro i=0
+	funcao inicio()
+	{
+		escreva("Insira o primeiro número: ")
+		leia(vNumero[0]) 
+		escreva("Insira o segundo número: ")
+		leia(vNumero[1]) 
+		escreva(vNumero[0] + ", " + vNumero[1] + ", ")
+		para (i=2;i<10;i++){		
+
+			se (vNumero[i-1] % 2 == 0 ){
+				vNumero[i] = vNumero[i-1] - vNumero[i-2]
+			}
+			senao {
+				vNumero[i] = vNumero[i-1] + vNumero[i-2]
+			}
+		escreva(vNumero[i] + ", ")	
+		}
+		
+	}
+}
