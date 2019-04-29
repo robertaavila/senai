@@ -1,0 +1,61 @@
+programa
+{
+	inclua biblioteca Tipos --> tp
+	inclua biblioteca Texto --> tx
+	
+	funcao inicio()
+	{
+	cadeia cEntrada = " "
+	cadeia cInicial = " "
+	caracter cEscolha = ' '
+	inteiro iTamanho = 0, i = 0
+		//o programa pede a palavra	
+		escreva("Insira uma palavra: ")
+		leia(cEntrada)
+		//o programa calcula o tamanho da palavra
+		iTamanho = tx.numero_caracteres(cEntrada)
+		//para cada letra da palavra o programa faz o loop
+		para(i = 0; i<iTamanho; i++){
+			//o programa extrai a letra
+			cInicial = tx.extrair_subtexto(cEntrada, i, i+1)
+			//o programa transforma o caracter extraído em letra minúscula
+			cInicial = tx.caixa_baixa(cInicial)
+			//conversão da cadeia para caracter
+			cEscolha = tp.cadeia_para_caracter(cInicial)
+
+		//para os casos de vogal	ele substitui as letras
+		escolha(cEscolha){	
+			caso 'a': {
+				cEscolha = 'x'
+				escreva(cEscolha)
+				pare
+			}
+			caso 'e':{
+				cEscolha = 'y'
+				escreva(cEscolha)
+				pare
+			}
+			caso 'i':{
+				cEscolha = 'w'
+				escreva(cEscolha)
+				pare
+			}
+			caso 'o':{
+				cEscolha = 'k'
+				escreva(cEscolha)
+				pare
+			}			
+			caso 'u':{
+				cEscolha = 'z'
+				escreva(cEscolha)
+				pare
+			}
+					
+			//para os demais casos mantém a letra	
+			caso contrario:{	
+				escreva(cEscolha)
+				}	
+			}	
+		}
+	}
+}
