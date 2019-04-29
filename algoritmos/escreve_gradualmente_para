@@ -1,0 +1,25 @@
+programa
+{
+	inclua biblioteca Texto --> tx
+	
+	funcao inicio()
+	{
+	cadeia cEntrada = " "
+	cadeia cInicial = " "
+	cadeia cSaida = " "
+	inteiro iTamanho = 0, i = 0
+		//o programa pede a palavra	
+		escreva("Insira uma palavra: ")
+		leia(cEntrada)
+		//o programa calcula o tamanho da palavra
+		iTamanho = tx.numero_caracteres(cEntrada)
+		//para cada letra da palavra o programa faz o loop
+		para(i = 0; i<iTamanho; i++){
+			//o programa extrai a letra
+			cInicial = tx.extrair_subtexto(cEntrada, i, i+1)
+			//o programa inclui a letra e um \n após cada inserção
+			cSaida += cInicial
+			escreva(cSaida + "\n")
+		}
+	}
+}
