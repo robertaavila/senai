@@ -1,0 +1,40 @@
+
+programa
+
+{ 
+	cadeia vMeses[12] 
+	real vValores[12]
+	inteiro i=0
+	inteiro iMenor  
+	inteiro iMaior  
+	cadeia iMesMaior
+	cadeia iMesMenor
+	
+	funcao inicio()
+
+	{cadeia vMeses[] = {"janeiro", "fevereiro", "março", "abril", "maio", "junho", 
+			"julho", "agosto", "setembro", "outubro", "novembro", "dezembro"} 
+		para (i=0;i<12;i++){
+			escreva("Insira a média de temperaturas do mês de " + vMeses[i] + ": " )
+			leia(vValores[i])
+			limpa()
+			se(i==0){
+				iMaior = vValores[0]
+				iMenor = vValores[0]
+		 		}
+			se(vValores[i]>iMaior){
+				iMaior = vValores[i]
+				iMesMaior = vMeses[i]
+			}
+			se(vValores[i]<iMenor){
+				iMenor = vValores[i]
+				iMesMenor = vMeses[i]
+			}
+		}
+		para (i=0;i<12;i++){
+		escreva("Média de temperaturas em " + vMeses[i] + " = " + vValores[i] + "\n")	
+		}
+		escreva("\nA maior média de temperaturas foi a do mês de " + iMesMaior + ": " + iMaior+ "\n")
+		escreva("\nA menor média de temperaturas foi a do mês de " + iMesMenor + ": " + iMenor+ "\n")
+	}
+}
