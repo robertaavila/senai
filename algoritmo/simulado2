@@ -1,0 +1,65 @@
+programa
+
+{	
+	inclua biblioteca Texto --> tx
+	inclua biblioteca Tipos --> tp
+	inteiro vAvai[5]
+	inteiro vFigueira[5]
+	inteiro iEmpates = 0
+	inteiro iSaldoAvai = 0
+	inteiro iSaldoFigueira = 0
+	inteiro i=0
+	inteiro iVitoriaA = 0 
+	inteiro iVitoriaF = 0
+	cadeia cEntrada 
+	cadeia cEntradaAvai 
+	cadeia cEntradaFigueira 
+	inteiro iEntrada
+	
+	funcao inicio()
+
+	{	escreva("Bem-vindo ao Algoritmo de Estatísticas Futebolísticas\n")
+		//o loop para inserir os valores nos vetores se repetirá por 5 vezes
+		para (i=0;i<5;i++){		
+			escreva("Insira o resultado do jogo entre Avaí x Figueirense jogo " + (i+1) + " de 5: ")
+			leia(cEntrada) 
+			cEntradaAvai = tx.extrair_subtexto(cEntrada,0,1)
+			vAvai[i] = tp.cadeia_para_inteiro(cEntradaAvai, 10)
+			//o programa verifica se o valor está entre 0 e 9 
+			se(vAvai[i]<0 ou vAvai[i]>9){
+				escreva("Valor inválido. Insira números entre 0 e 9.")
+			}
+			//se o valor for válido ele insere no saldo de gols de cada time
+			senao{
+				iSaldoAvai += vAvai[i]
+			}
+			cEntradaFigueira = tx.extrair_subtexto(cEntrada,2,3)
+			vFigueira[i] = tp.cadeia_para_inteiro(cEntradaFigueira, 10)
+			se(vFigueira[i]<0 ou vAvai[i]>9){
+				escreva("Valor inválido. Insira números entre 0 e 9.")
+			}
+			senao{
+				iSaldoFigueira += vFigueira[i] 
+			}
+			//se o número de gols na partida for igual há um empate
+			se(vAvai[i] == vFigueira[i]){
+				 iEmpates++
+			}
+			//senão quem fizer o maior número de gols vence a partida
+			senao se(vAvai[i] > vFigueira[i]){
+				iVitoriaA++				 
+			}
+			senao se(vAvai[i] < vFigueira[i]){
+				iVitoriaF++ 
+			}
+		}
+		escreva("\nO Avaí venceu " + iVitoriaA + " jogo(s).")
+		escreva("\nO Figueirense venceu " + iVitoriaF + " jogo(s).")
+		escreva("\nHouve " + iEmpates + " empate(s).")
+		//saldo de gols é igual ao número de gols feito menos os sofridos
+		iSaldoAvai = iSaldoAvai - iSaldoFigueira
+		iSaldoFigueira = iSaldoFigueira - iSaldoAvai 
+		escreva("\nO saldo de gols do Avaí é: " + iSaldoAvai + ".\nO saldo de gols do Figueirense é: " + iSaldoFigueira)	
+	}	
+
+}
