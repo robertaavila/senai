@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <table style="width:500px" border="1"
+      cellspacing="4" cellpadding="10">
+      <caption><h2>Preço dos sorvetes</h2></caption>
+      <tr>
+        <th valign="top" rowspan="6"><br><br><br>Sabores</th>
+        <th align="bottom" colspan="3">Preços</th>
+      </tr>
+      <tr>
+        <th>Flocos</th>
+        <td align="right">R$ 6</td>
+        <td align="right">R$ 7</td>
+      </tr>
+      <tr>
+        <th>Morango</th>
+        <td>R$ 6</td>
+        <td>R$ 7</td>
+      </tr>
+      <tr>
+        <th>Pistache</th>
+        <td align="center">R$ 8</td>
+        <td align="center">R$ 9</td>
+      </tr>
+      <tr>
+        <th>Limão</th>
+        <td>R$ 5</td>
+        <td>R$6 </td>
+      </tr>
+      <tr>
+        <th>Menta</th>
+        <td>R$ 5</td>
+        <td>R$ 6</td>
+      </tr>
+    </table>
+  </body>
+</html>
