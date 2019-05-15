@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Primeira página</title>
+  </head>
+  <h1>TAGS Básicas</h1>
+  <body>
+    <p>Exemplo de texto em <b>negrito</b>.</p>
+    <font face="verdana" size="4" color="#C70039">
+    <p>Uso de texto em <i>itálico</i>.</p>
+    </font>
+    <p>Texto usando <u>sublinhado</u>.</p>
+    <p>Exemplo de texto com sobrescrito: x<sup>2</sup>.</p>
+    <p>Exemplo de texto com subrescrito: x<sub>3</sub>.</p>
+    <pre>Texto
+            com pré-formatação.
+                                 A formação que você
+                                                    criar fica fixa.
+    </pre>
+    <p align="right"> Exemplo de texto em <b>negrito</b> alinhado à direita.</p>
+    <p align="left">Uso de texto em <i>itálico</i> alinhado à esquerda.</p>
+    <p align="center">Uso de texto em <i>itálico</i> alinhado no centro.</p>
+  </body>
+</html>
