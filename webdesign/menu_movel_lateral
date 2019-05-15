@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Site com menu lateral</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css"/>
+
+    <script type="text/javascript">
+      function abrirNav(){
+        document.getElementById("menu").style.width="250px";
+        document.getElementById("secao").style.marginLeft="250px";
+        document.body.style.backgroundColor = "rgba (0,0,0,0.4)";
+      }
+
+      function fecharNav(){
+        document.getElementById("menu").style.width="0";
+        document.getElementById("secao").style.marginLeft="0";
+        document.body.style.backgroundColor = "white";
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <nav id="menu">
+      <a href="#" class="fecharbtn" onclick="fecharNav()">&times;</a>
+      <a href="#">Empresa</a>
+      <a href="#">Quem somos</a>
+      <a href="#">Serviços</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contatos</a>
+    </nav>
+    <section id="secao">
+      <h1>Site com menu lateral</h1>
+      <br>
+      <span class="botaoAbrir" onclick="abrirNav()">
+        &#9776; Menu
+      </span>
+      <br>
+      <p>Neste site podemos visualizar o menu lateral ao clicar no botão Menu.</p>
+      <p>Para fechar o botão é necessário clicar no "X".</p>
+      <p>Ao abrir o menu, cria-se um efeito transparente</p>
+
+    </section>
+  </body>
+</html>
