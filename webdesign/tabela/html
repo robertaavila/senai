@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <title></title>
+    </head>
+    <body>
+        <h1>Lista de contatos do site</h1>
+        <h2>A seguir são apresentados os colaboradores da empresa e seus contatos.</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>Pedro da Silva</td>
+                <td>Florianópolis/SC</td>
+                <td>pedro@meusite.com</td>
+            <tr>
+                <td>Márcia Maria Oliveira</td>
+                <td>São José/SC</td>
+                <td>marcia@email.com</td>
+            </tr>
+                <td>João Mario Pedroso</td>
+                <td>Palhoça/SC</td>
+                <td>joao@email.com</td>
+            <tr>
+                <td>Rodolfo Pereira</td>
+                <td>Curitiba/PR</td>
+                <td>rodolfo@meusite.com</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
