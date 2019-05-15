@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <header>
+    <h1>JS - Exemplo</h1>
+  </header>
+  <h1>Exemplo sem utilizar arquivo JS externo</h1>
+  <h2>Adicionando texto </h2>
+  <input type="text" id="txtnome">
+  <p>Bem-vindo ao novo site utilizando Javascript!<br>
+    Usuário informado: <label id="lblnome"> </label> </p>
+
+    <br>
+    <button type="button"
+    onclick="document.getElementById('imagemlampada').src = 'img/lampada_acesa.jpg'">
+    Ligar Luz
+  </button>
+
+  <img id="imagemlampada" src='img/lampada_apagada.jpg' alt="lampada">
+  <br>
+  <button type="button"
+  onclick="document.getElementById('imagemlampada').src = 'img/lampada_apagada.jpg'">
+  Apagar Luz
+</button>
+<br><br>
+
+<script type="text/javascript">
+  function verificarResultado(){
+    var resultado = calcularValores(document.getElementById('valorx').value,
+                                    document.getElementById('valory').value);
+    document.getElementById('resultado').innerHTML = resultado;
+  }
+
+  function calcularValores(x,y){
+    var resultado = x * y;
+    alert("Resultado: " + resultado);
+  }
+
+</script>
+
+<h1>JS com função e alerta</h1>
+<label>Valor de X </label><input type="number" id="valorx"><br>
+<br>
+<label>Valor de Y </label><input type="number" id="valory"><br>
+<br>
+<button type="button" onclick="verificarResultado()">Calcular</button>
+
+
+<script type="text/javascript">
+  function verificarResultado2(){
+
+
+
+    var resultado2 = calcularValores2(document.getElementById('valora').value,
+                                    document.getElementById('valorb').value);
+    document.getElementById('resultado2').value = resultado2;
+  }
+
+  function calcularValores2(a,b){
+    var resultado2 = a * b;
+    return resultado2;
+  }
+
+</script>
+
+<h1>JS com função</h1>
+<label>Valor de A </label><input type="number" id="valora" ><br>
+<br>
+<label>Valor de B </label><input type="number" id="valorb"><br>
+<br>
+<label>Resultado </label><input type="number" id="resultado2"><br>
+<br>
+<button type="button" onclick="verificarResultado2()">Calcular</button>
+
+</body>
+</html>
