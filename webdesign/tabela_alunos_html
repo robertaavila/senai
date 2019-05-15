@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <table style="width:80%" border="1"
+      cellspacing="4" cellpadding="6">
+      <h1>Primeiro semestre</h1>
+      <tr>
+        <th rowspan=4>Nota da primeira avaliação</th>
+        <th>Alunos</th>
+        <th>Nota 1</th>
+        <th valign="bottom">Nota 2</th>
+        <th>Nota 3<br><br><br></th>
+      </tr>
+      <tr>
+        <th>Pedro</th>
+        <td align="right">7</td>
+        <td align="right">8</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <th>Maria</th>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th>João</th>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+    </table>
+  </body>
+</html>
