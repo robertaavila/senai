@@ -1,0 +1,19 @@
+    
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog da Roberta</title>
+  </head>
+  <font face="verdana" size="4" color="#1f56af">
+  <h1>Blog da Roberta</h1>
+  <body>
+    <h2>Projeto prático criado para a aula e Webdesign</h2>
+    <p>Roberta Vieira da Cunha Ávila.</p>
+    </font>
+    <font face="verdana" size="3" color="##0c24ad">
+    <p>Objetivo na disciplina: relembrar html e css, aprender javascript.</p>
+    <p>Objetivo no curso: aprender front-end e back-end.</p>
+    </font>
+  </body>
+</html>
