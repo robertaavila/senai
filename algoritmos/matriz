@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	
+		//declaração da matriz 
+		inteiro mValores[5][5]
+		inteiro i, j
+		inteiro iValor=5
+		cadeia cSaida=""
+		
+		//preencha a matriz com múltiplos de 5 
+		para (i=0; i<5; i++){
+			para(j=0; j<5;j++){
+				mValores[i][j] = iValor
+				iValor+=5
+			}
+		}
+	para(i=0; i<5; i++){
+		para(j=0; j<5; j++){
+			cSaida = cSaida + mValores[i][j]+ "\t"
+		}
+		cSaida += "\n"
+	}
+		
+	escreva(cSaida)
+	escreva("\nPreenchimento finalizado.") 
+	}
+}
