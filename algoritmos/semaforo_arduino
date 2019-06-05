@@ -1,0 +1,45 @@
+int ledDelay = 5000;
+int redPin = 10;
+int yellowPin = 9; 
+int greenPin = 8; 
+int pgreenPin = 7; 
+int predPin = 6; 
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(redPin, OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+  pinMode(greenPin, OUTPUT); 
+  pinMode(predPin, OUTPUT);
+  pinMode(pgreenPin, OUTPUT);
+}
+
+void loop () {
+  // put your main code here, to run repeatedly:
+  digitalWrite(greenPin, HIGH);//acende a luz verde
+  digitalWrite(predPin, HIGH);
+  delay(ledDelay);//espera 5 segundos
+
+  digitalWrite(greenPin, LOW);
+  digitalWrite(yellowPin, HIGH);
+  digitalWrite(predPin,HIGH); 
+  delay(300);
+  digitalWrite(predPin,LOW); 
+  delay(300);
+  digitalWrite(predPin,HIGH); 
+  delay(300);
+  digitalWrite(predPin,LOW); 
+  delay(300);
+  digitalWrite(predPin,HIGH); 
+  delay(300);
+  digitalWrite(predPin,LOW);    
+ 
+  digitalWrite(yellowPin, LOW);
+  digitalWrite(redPin, HIGH);
+  digitalWrite(pgreenPin, HIGH);
+  delay(ledDelay*2); 
+  digitalWrite(redPin, LOW);
+  digitalWrite(pgreenPin, LOW);
+}
+
+
