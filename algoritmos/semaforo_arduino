@@ -6,7 +6,6 @@ int pgreenPin = 7;
 int predPin = 6; 
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(redPin, OUTPUT);
   pinMode(yellowPin, OUTPUT);
   pinMode(greenPin, OUTPUT); 
@@ -17,12 +16,21 @@ void setup() {
 void loop () {
   // put your main code here, to run repeatedly:
   digitalWrite(greenPin, HIGH);//acende a luz verde
-  digitalWrite(predPin, HIGH);
+  digitalWrite(predPin, HIGH);//acende a luz de pedestre vermelha
   delay(ledDelay);//espera 5 segundos
 
-  digitalWrite(greenPin, LOW);
-  digitalWrite(yellowPin, HIGH);
-  digitalWrite(predPin,HIGH); 
+  digitalWrite(greenPin, LOW); //desliga a luz verde
+  digitalWrite(yellowPin, HIGH);//acende a amarela
+  delay(2000);//espera 2 segundos
+  
+  digitalWrite(yellowPin, LOW);//desliga o amarelo
+  digitalWrite(predPin, LOW);//desliga o vermelho de pedestre
+  digitalWrite(redPin, HIGH);//acende o vermelho
+  digitalWrite(pgreenPin, HIGH);//acende o verde de pedestre
+  delay(ledDelay*2); //espera 10 segundos
+  
+  digitalWrite(pgreenPin, LOW);//desliga o verde de pedestre
+  digitalWrite(predPin,HIGH); //pisca o vermelho de pedestre 3 vezes
   delay(500);
   digitalWrite(predPin,LOW); 
   delay(500);
@@ -33,14 +41,7 @@ void loop () {
   digitalWrite(predPin,HIGH); 
   delay(500);
   digitalWrite(predPin,LOW);
-  delay(500);    
- 
-  digitalWrite(yellowPin, LOW);
-  digitalWrite(redPin, HIGH);
-  digitalWrite(pgreenPin, HIGH);
-  delay(ledDelay*2); 
+  delay(500);
   digitalWrite(redPin, LOW);
-  digitalWrite(pgreenPin, LOW);
+  
 }
-
-
