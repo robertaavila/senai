@@ -23,16 +23,17 @@ void loop () {
   digitalWrite(greenPin, LOW);
   digitalWrite(yellowPin, HIGH);
   digitalWrite(predPin,HIGH); 
-  delay(300);
+  delay(500);
   digitalWrite(predPin,LOW); 
-  delay(300);
+  delay(500);
   digitalWrite(predPin,HIGH); 
-  delay(300);
+  delay(500);
   digitalWrite(predPin,LOW); 
-  delay(300);
+  delay(500);
   digitalWrite(predPin,HIGH); 
-  delay(300);
-  digitalWrite(predPin,LOW);    
+  delay(500);
+  digitalWrite(predPin,LOW);
+  delay(500);    
  
   digitalWrite(yellowPin, LOW);
   digitalWrite(redPin, HIGH);
